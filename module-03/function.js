@@ -88,9 +88,10 @@ function difference(num1, num2) {
     return num1 - num2; // returns the difference between num1 & num2 BUT it does not print it
 }
 
-sum(2, 10);
+sum(2, 10); // since this function did not return a value, it cannot be manipulated further
 
-let addTenToDifference = difference(10, 5) + 10;
+// since the difference function returns a value, it CAN be manipulated further
+let addTenToDifference = difference(10, 5) + 10; 
 console.log(addTenToDifference);
 
 
