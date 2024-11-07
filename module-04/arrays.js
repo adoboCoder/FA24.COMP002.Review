@@ -14,6 +14,11 @@ let myGrades = [95, 100, 76, 100, 85]; //array with 5 elements inside
 console.log("myGrades elements")
 iterate(myGrades);
 
+/****************************************/
+// push & pop - LIFO (stack)
+// push adds element at the end of the array
+// pop removes the last element of the array
+/****************************************/
 // use push() to add new elements at the end of the array
 myGrades.push(90);
 console.log("myGrades elements after pushing a new element")
@@ -22,6 +27,21 @@ iterate(myGrades);
 // use pop() to remove the element at the end of the array
 myGrades.pop();
 console.log("myGrades elements after popping")
+iterate(myGrades);
+
+/****************************************/
+// unshift & shift - FIFO (queue)
+// unshift adds elements at the beginning of the array
+// shift removes the first item in the array
+/****************************************/
+// use unshift() to add new elements at the end of the array
+myGrades.unshift(90);
+console.log("myGrades elements after unshift a new element")
+iterate(myGrades);
+
+// use shift() to remove the element at the end of the array
+myGrades.shift();
+console.log("myGrades elements after shift")
 iterate(myGrades);
 
 
